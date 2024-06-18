@@ -1,0 +1,133 @@
+/*body{
+    margin: 0 ;
+}
+video{
+    position: fixed;
+}
+form {
+    margin: 0 auto;
+    width: 25%;
+    height: 40%;
+    border: 0.5px solid whitesmoke;
+    position: absolute;
+    bottom: 30%;
+    margin-left: 35%;
+    overflow-y: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+h2{
+    text-align: center ;
+}
+form input{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 85px;
+    padding-right: 60px;
+
+}
+form input:focus{
+    background-color: steelblue;
+    color: white;
+    outline: none;
+}
+button {
+    position: relative;
+    bottom: 2%;
+    left: 30%;
+    background-color: rgb(175, 102, 243);
+    color:white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 8px;
+    border: none
+}
+*/
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing content */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure video is behind other content */
+}
+
+.login {
+  width: 50%; /* Adjust width as needed */
+  max-width: 500px; /* Limit maximum width */
+  border: 0.5px solid whitesmoke;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  background: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  width: calc(60% - 20px); /* Adjust input width */
+  padding: 10px;
+  margin: 10px 0;
+  border: none; /* Remove border */
+  border-bottom: 1px solid #ccc; /* Add bottom border for styling */
+}
+
+form input:focus {
+  background-color: steelblue;
+  color: white;
+  outline: none;
+}
+
+button {
+  background-color: rgb(175, 102, 243);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: none;
+  margin-top: 10px;
+  width: 100px;
+}
+
+/* Make the buttons inline-block to display them side by side */
+button[type="reset"],
+button[type="submit"] {
+  display: inline-block;
+}
+
+/* Adjust margins to make buttons appear side by side */
+button {
+  margin: 0 85px; /* Add some margin between buttons */
+}
+
+/* Adjust margin-left for the last button to position it */
+button:last-child {
+  margin-left: 210px; /* Adjust as needed */
+  margin-top: -25.5px; /* Optional: Adjust margin-top as needed */
+}
+button[type="reset"] {
+  margin-right: 200px; /* Adjust the margin as needed */
+}
